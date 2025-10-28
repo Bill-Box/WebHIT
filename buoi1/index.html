@@ -87,55 +87,188 @@
     .info-box h2 {
       margin-top: 0;
     }
+    a{
+      color: gray;
+    }
+    a:hover{
+      color: red;
+    }
+    button{
+      color:#333;
+      padding: 30xp 15px;
+      border: none;
+      border-radius: 6px;
+      background-color: #f4f4f4;
+      cursor: pointer;
+    }
+    button:hover{
+      color:red;
+
+    }
   </style>
 </head>
 
 <body>
   <div class="left">
-    <h1>Hello anh em</h1>
-    <h2>Sếp Đức Đây </h2>
-    <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-1/275789550_10223380528236479_8485150438300342201_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeGXfe2sUBbO8yO0tp-OgVYsDv1JQEfK8GwO_UlAR8rwbNwmrh-S7v1UJYF7dmRQf56wID2WFyRodeAWELswy9zr&_nc_ohc=yImioUXMYIEQ7kNvwFcuy-N&_nc_oc=Adl1wGmc8oEiv3jylErRVRtw-yiKeQd9igGwGijYTzsOZc71NSzsmC4wvDLQdQaByv4&_nc_zt=24&_nc_ht=scontent.fhan18-1.fna&_nc_gid=xV7NPkVw6e-AVp_nVqdVdw&oh=00_Afc7liQ26e3VJ7xnf2bX31Ng0amc5bZP_WPiCipMGdzC1g&oe=68F82501" alt="Red Ranger" />
-    <a href="https://www.facebook.com/oxi.hoa">Facebook của Duc WooKong</a>
+    <h1>Welcom to My Profile</h1>
+  
+    
   </div>
 
   <div class="form-container">
     <form>
-      <label for="fname">Nhập Tên</label><br />
+      <label for="fname">Accout</label><br />
       <input type="text" id="fname" name="fname" /><br />
 
-      <label for="lname">Tên Đệm:</label><br />
-      <input type="text" id="lname" name="lname" />
+      <label for="lname">Login</label><br />
+      <input type="password" id="lname" name="lname" />
 
-      <p><strong>Chọn sàn chứng khoán:</strong></p>
+      <p><strong>Chọn món ăn yêu thích</strong></p>
       <input type="radio" id="html" name="fav_language" value="HTML" />
-      <label for="html">Binance</label><br />
+      <label for="html">Phở Bò</label><br />
       <input type="radio" id="css" name="fav_language" value="CSS" />
-      <label for="css">ABCS</label><br />
+      <label for="css">Bún Riêu Cua</label><br />
       <input type="radio" id="js" name="fav_language" value="JavaScript" />
-      <label for="js">Sàn Nhà</label><br /><br />
+      <label for="js">Cơm Mẹ Nấu</label><br /><br />
 
-      <p><strong>Phương tiện Đức có:</strong></p>
+      <p><strong>Phương tiện có:</strong></p>
       <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-      <label for="vehicle1">Xe đạp</label><br />
+      <label for="vehicle1">SH stribertruct</label><br />
       <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-      <label for="vehicle2">vinfas vf7</label><br />
+      <label for="vehicle2">hondasilic</label><br />
       <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
       <label for="vehicle3">tesla stribertruc</label><br /><br />
 
       <label for="cars">Choose a your body:</label>
       <select id="cars" name="cars">
-        <option value="volvo">Đẹp Trai</option>
-        <option value="saab">Cao To</option>
-        <option value="fiat">Bảnh Trai</option>
-        <option value="audi">6 múi</option>
+        <option value="volvo">Đẹp Gái</option>
+        <option value="saab">Eo Siêu Thon</option>
+        <option value="fiat">Slay</option>
+        <option value="audi">Quyến Rũ</option>
       </select>
+      <button onclick ="alert('Gửi Thành Công!')"> Send</button>
 
       <div class="info-box">
         <h2>Thông Tin</h2>
-        <p>Đức Phạm là một lập trình viên.</p>
-        <p>Đức Phạm có sở thích học hỏi công nghệ mới.</p>
+        <p> là một Butiful Girl.</p>
+        <p> có sở thích học hỏi món ăn mới.</p>
       </div>
     </form>
   </div>
+  
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            color: #a3f8ff;
+            padding: 10px 15px;
+            background-color: gray;
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+        }
+        button:hover{
+            background-color: green;
+            color:blue;
+        }
+        .avata{
+            height: auto;
+            max-width: 60%;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+        }
+        a{
+            color : blue;
+        }
+        a:hover{
+            color: red;
+        }
+
+    </style>
+</head>
+<br>
+    <h2>My Hopes</h2>
+    <ul>
+        <li>Reading Book</li>
+        <li>Playing Game</li>
+        <li>Listening Music</li>
+    </ul>
+    <h3> Skills</h3>
+    <table border="1">
+        <tr>
+    <th colspan = "2">Ky Nang</th>
+    <th>Muc Do</th>
+    </tr>
+    <tr>
+   <td>Java</td>
+    <td>Tot</td>
+    <td> cham</td>
+    </tr>
+    <tr>
+    <td>HTML</td>
+    <td>Kha</td>
+    <td>cham</td>
+  </tr>
+    </table>
+    <h3> Tim Hieu Them</h3>
+    <a href = "https://www.facebook.com/ly.top.39" target="_self" >Facebook</a> |
+
+    <a href = " https://www.instagram.com/ly.top.39/" target="_self" >Instagram</a> |
+
+    <a href = "https://www.facebook.com/ly.top.39" target="_self" >Twitter</a>
+    <img class= "avata" src = "https://cellphones.com.vn/sforum/wp-content/uploads/2024/03/hinh-nen-ngau-38.jpg" alt ="Red Ranger"/>
+   
+    <form>
+        <label for ="fname">Ho Ten</label></form>
+        <input type = "text" id ="fname" name = "fname"/></br>
+        <label for="lname"> Email</label></br>
+        <input type = "text" id ="lname" name = " lname"></br>
+    </br>
+        <p><strong>Message:</strong></p>
+        <textarea name="message" rows="0" cols="0">
+        </textarea>
+        <label for ="fname">Time:</label></form></br>
+        <input type = "datetime-local" id ="fname" name = "fname;  width: 20% ; length: 100px"/></br>
+    </form>
+    <button onclick ="alert('Da Gui Thanh Cong!')">Gui</button>
+    <p> or </p>
+    <button onclick ="alert('Gui Khong Thanh Cong!')">Thoat</button>
+
+    <form>
+  <input type="radio" id="html" name="fav_language" value="HTML" />
+  <label for="html">HTML</label><br />
+  <input type="radio" id="css" name="fav_language" value="CSS" />
+  <label for="css">CSS</label><br />
+  <input
+    type="radio"
+    id="javascript"
+    name="fav_language"
+    value="JavaScript"
+  />
+  <label for="javascript">JavaScript</label>
+</form>
+<a href ="https://cdn-media.sforum.vn/storage/app/media/anh-dep-83.jpg" style ="color:red">An vao Day</a>
+<hr>
+<br style ="background-color: #a3f7ff">
+    <h1> WELCOM BACK!</h1>
+    <p style ="border: 2px solid ; text-align:center"; >------Bill------</p></br>
+    <p><button id ="https://cdn-media.sforum.vn/storage/app/media/anh-dep-83.jpg"> Xem</button></p>
+    <p style = "text-align:center">Chao Mung mn tro lai </p>
+    <form>
+        <ol>
+            <li><cite>HTML</cite></li>
+            <li>CCS</li>
+            <li>JavaCrip</li>
+        </ol>
+    </form>
+</div>
 </body>
 </html>
