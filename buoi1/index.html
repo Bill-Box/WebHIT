@@ -1,13 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang của Đức Phạm</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 40px;
+    }
+
+    .left {
+      text-align: center;
+    }
+
+    .left h1 {
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+
+    .left h2 {
+      color: rgb(0, 26, 255);
+      margin-top: 5px;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 10px;
+      display: block;
+      margin: 15px auto;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 8px;
+      text-decoration: none;
+      color: blue;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 280px;
+    }
+
+    form label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 6px;
+    }
+
+    select {
+      width: 100%;
+      padding: 6px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+    }
+
+    .info-box {
+      background-color: #fff4a3;
+      padding: 10px;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+
+    .info-box h2 {
+      margin-top: 0;
+    }
+  </style>
 </head>
+
 <body>
+  <div class="left">
     <h1>Hello anh em</h1>
-    <p>Chào mừng các bạn đến với buổi học đầu tiên!</p>
-    <img src ="https://i.pinimg.com/474x/90/57/0a/90570addee2645866a597530721f37fd.jpg"/>
+    <h2>Sếp Đức Đây </h2>
+    <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-1/275789550_10223380528236479_8485150438300342201_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeGXfe2sUBbO8yO0tp-OgVYsDv1JQEfK8GwO_UlAR8rwbNwmrh-S7v1UJYF7dmRQf56wID2WFyRodeAWELswy9zr&_nc_ohc=yImioUXMYIEQ7kNvwFcuy-N&_nc_oc=Adl1wGmc8oEiv3jylErRVRtw-yiKeQd9igGwGijYTzsOZc71NSzsmC4wvDLQdQaByv4&_nc_zt=24&_nc_ht=scontent.fhan18-1.fna&_nc_gid=xV7NPkVw6e-AVp_nVqdVdw&oh=00_Afc7liQ26e3VJ7xnf2bX31Ng0amc5bZP_WPiCipMGdzC1g&oe=68F82501" alt="Red Ranger" />
+    <a href="https://www.facebook.com/oxi.hoa">Facebook của Duc WooKong</a>
+  </div>
+
+  <div class="form-container">
+    <form>
+      <label for="fname">Nhập Tên</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+
+      <label for="lname">Tên Đệm:</label><br />
+      <input type="text" id="lname" name="lname" />
+
+      <p><strong>Chọn sàn chứng khoán:</strong></p>
+      <input type="radio" id="html" name="fav_language" value="HTML" />
+      <label for="html">Binance</label><br />
+      <input type="radio" id="css" name="fav_language" value="CSS" />
+      <label for="css">ABCS</label><br />
+      <input type="radio" id="js" name="fav_language" value="JavaScript" />
+      <label for="js">Sàn Nhà</label><br /><br />
+
+      <p><strong>Phương tiện Đức có:</strong></p>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1">Xe đạp</label><br />
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+      <label for="vehicle2">vinfas vf7</label><br />
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+      <label for="vehicle3">tesla stribertruc</label><br /><br />
+
+      <label for="cars">Choose a your body:</label>
+      <select id="cars" name="cars">
+        <option value="volvo">Đẹp Trai</option>
+        <option value="saab">Cao To</option>
+        <option value="fiat">Bảnh Trai</option>
+        <option value="audi">6 múi</option>
+      </select>
+
+      <div class="info-box">
+        <h2>Thông Tin</h2>
+        <p>Đức Phạm là một lập trình viên.</p>
+        <p>Đức Phạm có sở thích học hỏi công nghệ mới.</p>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
