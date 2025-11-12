@@ -3,7 +3,6 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   flex-direction: column;
 }
 .head{
@@ -15,6 +14,25 @@ body{
   font-size: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border-radius: 20px;
+  
+}
+.shop i{
+  color: #000000;
+
+}
+.shop {
+  margin-top: 20px;
+  background-color: #24dbd4;
+  margin-bottom: 20px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 12px 20px;
+}
+.shop :hover{
+  color: red;
+  transform: scale(1.2);
+
 }
 .cars_main{
   border-radius: 5px;
@@ -169,4 +187,24 @@ button{
   background-color: #c342d6;
   transform: scale(1.2);
   margin-right: 10px;
+}
+.dc{
+  width: 100px;
+  height: auto; 
+  object-fit: cover;
+  border-radius: 10px;
+}
+.ngoai i{
+  font-weight: bold;
+}
+.ngoai{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px
+}
+ .ngoai span{
+  margin-left: 150px;
+
 }
