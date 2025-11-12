@@ -7,8 +7,8 @@ body{
   flex-direction: column;
 }
 .head{
-  background-color: #e47028;
-  color:#2cd6c0;
+  background-color: #24dbd4;
+  color:#07579d;
   display: flex;
   align-items: center;
   justify-content: center;
