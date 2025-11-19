@@ -1,0 +1,675 @@
+.m1{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex-direction: nowrap;
+    justify-content: space-around;
+    justify-content: space-between;
+    font-size: 24px;
+     
+}
+h2{
+    margin-left: 30px;
+}
+.chinh{
+    width: 1000px;
+    margin-left: 20%;
+}
+.m11{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: nowrap;
+    justify-content: space-between;
+    margin-left: 30px;
+    gap: 20px;
+    font-weight: 100;
+    font-size: 26px;
+}
+.m12{
+    margin-right: 30px;
+    margin-top: 18px;
+}
+.m12 button{
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 20px;
+}
+.m12 button:hover{
+    background-color: rgb(255, 251, 33);
+    color: rgb(220, 45, 15);
+    transform: scale(1.1);
+}
+.m2{  
+    background-image: url("https://images.pexels.com/photos/691114/pexels-photo-691114.jpeg");
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.m2 p{
+    font-size: 20px;
+}
+.m21{
+    font-size: 10px;
+    background-color: rgb(253, 143, 0);
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+.m21{
+    border-radius: 10px;;
+}
+.m21:hover{
+    transform: scale(1.1);
+}
+.m31{
+    background-color: rgb(170, 222, 225);
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.m3{
+    background-color: rgb(216, 234, 239);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.m34 a{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    gap: 20px;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.m34 a:hover{
+    background-color: rgb(219, 212, 212);
+    transform: scale(1.02);
+}
+.m34{
+    background-color: rgb(249, 249, 249);
+    width: 400px;
+    height: 300px;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1)
+}
+.m34 i{
+    color: orange;
+}
+.m33{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.m32{
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: #cfdae8;
+}
+.m32:hover{
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    color: white;
+}
+.m4{
+    display: flex;
+    flex-direction: row;
+}
+.m41{
+    margin-left: 500px;
+    margin-right: 10px;
+}
+.m4 h1{
+    margin-left: 20px;
+}
+.m4 p{
+    padding: 10px;
+    width: 20px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: rgb(222, 218, 218);
+}
+.m4 p:hover{
+    background-color: rgb(242, 156, 90);
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+.m5{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.m511{
+    background-image: url("https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg");
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.m51{
+    border-radius: 10px;
+    overflow: hidden;
+    border-color: rgb(255, 14, 14);
+    width: 500px;
+    height: auto;
+    margin-left: 20px;
+    box-shadow: 0px 4px 10px rgba(110, 107, 107, 0.3);
+    border: 0.01px solid rgb(117, 108, 108);
+}
+.m5121{
+    font-size: 25px;
+    font-weight: bold;
+}
+.m512{
+    width: 400px;
+    margin-left: 10px;
+}
+.m53 button{
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.m53{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.m53 button:hover{
+    background-color: rgb(225, 170, 108);
+    color: white;
+    transform: scale(1.1);
+    box-shadow: solid 2px 2px 10px rgba(0,0,0,0.3);
+}
+.m521{
+    background-image: url("https://images.pexels.com/photos/1346347/pexels-photo-1346347.jpeg");
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.m61 i{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(226, 206, 206);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.m61{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.m611{
+    font-size: 30px;
+    font-weight: bold;
+}
+.m612{
+    font-size: 20px;
+}
+.m62{
+    align-items: center;
+    margin-left: 170px;
+    margin-bottom: 30px;
+}
+.m62 i{
+    width: 60px;
+    height: 40px;
+    background-color: lightpink;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 5px;
+    margin-left: 20px;
+}
+.m711{
+    background-image: url("https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg");
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.m71{
+    border-radius: 10px;
+    overflow: hidden;
+    border-color: rgb(255, 14, 14);
+    width: 300px;
+    height: auto;
+    margin-left: 20px;
+    box-shadow: 0px 4px 10px rgba(147, 142, 142, 0.3);
+    border: 0.01px solid rgb(255, 243, 243);
+}
+.m7{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.m7121{
+    font-size: 20px;
+    font-weight: bold;
+}
+.m712{
+    width: 300px;
+    margin-left: 10px;
+}
+.m73 button{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.m73{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.m73 button:hover{
+    background-color: rgb(225, 170, 108);
+    color: white;
+    transform: scale(1.1);
+    box-shadow: solid 2px 2px 10px rgba(0,0,0,0.3);
+}
+.m7112{
+    background-image: url("https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg");
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.m7113{
+    background-image: url("https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg");
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.m8{
+    margin-top: 5px;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.m8111{
+    background-image: url("https://images.pexels.com/photos/1337825/pexels-photo-1337825.jpeg");
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.m8112{
+    background-image: url("https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg");
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.m8113{
+    background-image: url("https://images.pexels.com/photos/1510684/pexels-photo-1510684.jpeg");
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.m91{
+    background-color: rgb(188, 183, 183);
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.m9{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    margin-left: 20px;
+    
+}
+.m94 a{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    gap: 20px;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.m94 a:hover{
+    background-color: rgb(255, 254, 254);
+    transform: scale(1.02);
+}
+.m94{
+    background-color: rgb(255, 255, 255);
+    width: 550px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.m99{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.m92{
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: #cfdae8;
+}
+.m92:hover{
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    color: white;
+}
+.m99 h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.m991{
+    background-image: url("https://www.bradleysmoker.com/cdn/shop/articles/HOW_TO_REVERSE_SEAR_MEAT_WITH_A_FOOD_SMOKER.webp?v=1675738998");
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.m992{
+    background-image: url("https://images.pexels.com/photos/592815/pexels-photo-592815.jpeg");
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.m992{
+    margin-top: 10px;
+}
+.m993{
+    background-image: url("https://images.pexels.com/photos/3814446/pexels-photo-3814446.jpeg");
+    background-size: cover;     
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 405px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.m10{
+    background-color: #d6b9b9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-top: 40px;
+}
+.mf1{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.m101{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8715d;
+}
+.m104{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.m103{
+    width: 100px;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: #e6cfcf;
+}
+.m103:hover{
+    color: red;
+    background-color: rgb(133, 210, 210);
+    transform: scale(1.1);
+}
+.m105{
+    font-size: 20px;
+}
+.man{
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+.final{
+    margin-left: 250px;
+}
+.m1f{
+    display: flex;
+    flex-direction: nowrap;
+    font-size: 24px;
+    height: 80px;
+     
+}
+.m11f{
+    display: flex;
+    flex-direction: nowrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 20px;
+    gap: 20px;
+    font-weight: 100;
+    font-size: 24px;
+    color: rgb(158, 155, 155);
+}
+.f1{
+    margin-right: 30px;
+    margin-top: 5px;
+}
+.f1 button{
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 20px;
+}
+.f1 button:hover{
+    background-color: rgb(255, 251, 33);
+    color: rgb(220, 45, 15);
+    transform: scale(1.1);
+}
+.f1{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 150px;
+    flex-wrap: wrap;
+}
+.f2{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-color: rgb(255, 254, 254);
+    color: aliceblue;
+}
+.m34{
+    background-color: rgb(249, 249, 249);
+    width: 400px;
+    height: 300px;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.m33{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.h22{
+    color: rgb(238, 231, 231);
+    margin-right: 150px;
+}
+.man{
+    background-color: rgb(48, 46, 46);
+    
+}
+.f2 i{
+    color: rgb(158, 155, 155);
+}
+.tet{
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.f3{
+    margin-left: 400px;
+    width: 1000px;
+    background-color: rgb(45, 44, 44);
+    height: 200px;
+    
+}
+.cl{
+    margin-left: 25%;
+    height: 100px;
+    margin-top: 20px;
+    color: rgb(91, 85, 85);
+}
+.c{
+    width: 800px;
+    border-color: #000000;
+    color: rgb(0, 0, 0);
+    margin-left: 100px;
+}
