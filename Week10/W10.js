@@ -17,52 +17,69 @@ let element = [];
 //       title.style.fontSize = "24px";
 //       title.textContent = "Creating HTML element DOM Day 2";
 //       document.body.appendChild(title);
+mainLoop:
 while(true){ 
-    let Them =Number(prompt("Chon 1 de add:\nChon 2 de show:\nChon 3 de Exit:\n"));
-    if(Them == 1){ 
-        let name=prompt("Nhap ten: ");
-        console.log("Name: ", name);
-        let Poin=prompt("Nhap Poin: ");
-        console.log("Poin: ", Poin);
-        element.push(name);
-        element.push(Poin);
-        list.push(element);
-        console.log("Them Thanh Cong: ", element);
-        alert("Them Thanh Cong: " + name + " - " + Poin);
-        let title = document.createElement("h3");
-        title.className = "title";
-        title.style.fontSize = "30px";
-        if(Poin >= 5){
-            title.style.color = "blue";
-        }
-        else{
-            title.style.color = "red";
-        }
-        title.textContent = "Tên: " + name + " - " + "Điểm: "+ Poin;
-         document.body.appendChild(title);
+    const Them =Number(prompt("Chon 1 de add:\nChon 2 de show:\n Chon 3 remove:\nChon 4 de Exit:\n"));
+    switch(Them){
+        case 1:{ 
+       const name = (prompt("Nhap ten:") || "").trim();
+       console.log("Name: ", name);
+      const Poin = Number(prompt("Nhap Poin:"));
+      console.log("Poin: ", Poin);
+      const element = [name, Poin];
+      list.push(element);
+      console.log("List: ", list);
+      const title = document.createElement("h3");
+      title.style.fontSize = "30px";
+      title.style.color = (Poin >= 5) ? "blue" : "red";
+      title.textContent = `Tên: ${name} - Điểm: ${Poin}`;
+      document.body.appendChild(title);
+
+      alert("Them Thanh Cong: " + name + " - " + Poin);
+      break;
     } 
-    else if(Them == 2){
+    case 2:{
+        if (list.length === 0) {
+        alert("Mang Rong Khong the Show!");
+      } else {
+        for (const item of list) {
+          
+          const title = document.createElement("h3");
+            title.style.fontSize = "30px";
+            title.style.color = (item[1] >= 5) ? "blue" : "red";
+            title.textContent = `Tên: ${item[0]} - Điểm: ${item[1]}`;
+            document.body.appendChild(title);
+        }
+      }
+      break;  
+    }
+    case 3:{
         if(list.length == 0){
-            console.log("Mang Rong Khong the Show!");
-            alert("Mang Rong Khong the Show!");
-        } 
+            console.log("Mang Rong Khong the Xoa!");
+            alert("Mang Rong Khong the Xoa!");
+        }
         else{
-            o++;
-            console.log("Mang:\n");
-            for(let i of list){
-                alert(i[0] + " - " );
-                console.log(i[0] + " - ");
-                let title = document.createElement("h3");
-                title.className = "title";
-                title.style.fontSize = "20px";
-                title.textContent = "Mang Rong Khong the Show!" ;
-            }
+            let removename = prompt("Ten muon xoa: "); 
+            console.log("Ten muon xoa: ", removename);
+            removename = removename.trim();
+            let found = false;
+            const ar = document.querySelectorAll('h3');
+            for(let i = 0; i < list.length ; i++){
+                if( removename === list[i][0] ){
+                    list.splice(i,1);
+                    found = true;
+                    console.log("Xoa ten Thanh Cong: " , removename);
+                    alert("Xoa ten Thanh Cong: " + removename);
+                    break;
+                }
+            } 
+            break;
         }
     }
-    else if(Them == 3){
-        console.log("Thoat Thanh Cong!");
-        alert("Cảm ơn đã sử dụng chương trình. Tạm biệt!");
-        break;
-    }
-     
+     case 4:
+         break mainLoop;
+    default:
+      alert("Lua chon khong hop le!");
+    }  
 }
+     
