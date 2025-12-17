@@ -1,0 +1,17 @@
+#studentList {
+  margin-top: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.student-item {
+  background-color: #464040;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.student-item span {
+  font-weight: bold;
+}
