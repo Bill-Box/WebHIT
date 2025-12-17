@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Document Object Model</title>
+    <link rel="stylesheet" href="W10.css">
   </head>
   <body>
     <script src="W10.js" defer></script>
@@ -9,5 +10,20 @@
     <h3 class="title" id="first-title"></h3>
     <h3 class="title" id="second-title"></h3>
     <h3 class="title" id="third-title"></h3>
+    <div class="container">
+    <h2>Nhập điểm sinh viên</h2>
+    <form id="form">
+      <label for="name"></label>
+      <input type="text" id="name" placeholder="Nhập tên" required>
+
+      <label for="score"></label>
+      <input type="number" id="score" placeholder="Nhập điểm" required>
+
+      <button type="submit">Thêm vào danh sách</button>
+    </form>
+
+    <div id="studentList"></div> <!-- Hiển thị danh sách sinh viên -->
+  </div>
+
   </body> 
 </html> 
