@@ -18,8 +18,8 @@ let element = [];
 //       title.textContent = "Creating HTML element DOM Day 2";
 //       document.body.appendChild(title);
 while(true){ 
-    let Them = prompt("Chon 1 de add:\nChon 2 de show:\nChon 3 de Exit:\n");
-    if(Them == 1){
+    let Them =Number(prompt("Chon 1 de add:\nChon 2 de show:\nChon 3 de Exit:\n"));
+    if(Them == 1){ 
         let name=prompt("Nhap ten: ");
         console.log("Name: ", name);
         let Poin=prompt("Nhap Poin: ");
