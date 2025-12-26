@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang = "vi">
+  <head>
+    <meta charset = "UTF-8">
+    <link rel="stylesheet" href="B10.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  </head>
+  <body>
+    <script src = "B10.js" defer></script>
+    <div class="header">
+          <div class="head1">
+              <div class="head11">
+                  <h1 class="logo">Zamato</h1>
+                  <div class="head1_card">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <input type="text" placeholder="YWCAn Hà Nội">
+                  <span class="divider">|</span>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="text" placeholder="Search for Restaurants, Cuisines or Dishes">
+                  </div>
+                  <div class="hdc">
+                  <button>Log in</button>
+                  <button>Sign up</button>
+                  </div>
+              </div>
+              <div class="head12">
+                  <p>Trang Chu</p>
+                  <span class="divide">|</span>
+                  <p>India</p>
+                  <span class="divide">|</span>
+                  <p>DEIHI NCR Nha Hang</p>
+              </div>
+              </div>
+          <div class="head3">
+              <a href="#"><i class="fa-solid fa-utensils"></i> Dining Out</a>
+              <a href=""><i class="fa-solid fa-motorcycle"></i>Delivery</a>
+              <a href=""><i class="fa-solid fa-beer-mug-empty"></i>Nightlife</a>
+                  <div class="head12">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="text" id="local" name="local" placeholder="Search for Restaurants, Cuisines or Dishes">
+              </div>
+          </div>
+      </div>
+      <div class="mainf">
+      <section class="collections">
+        <div class="collections__inner">
+          <div class="collections__head">
+            <h2>Collections</h2>
+            <div class="collections__row">
+              <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Delhi NCR, based on trends</p>
+              <a class="collections__link" href="#">All collections in Delhi NCR</a>
+            </div>
+          </div>
+          <div class="carousel" id="carousel1">
+            <button class="carousel__btn carousel__btn--left" type="button" aria-label="Prev">
+              &#8249;
+            </button>
+
+            <div class="carousel__viewport">
+              <div class="carousel__track"></div>
+            </div>
+
+            <button class="carousel__btn carousel__btn--right" type="button" aria-label="Next">
+              &#8250;
+            </button>
+          </div>
+        </div>
+      </section>
+          </div>
+          <div class="main2">
+              <section class="promo">
+          <div class="promo__filters">
+              <button class="chip" type="button">Rating: 4.5+</button>
+              <button class="chip" type="button">Rating: High to Low</button>
+              <button class="chip" type="button">Cost: Low to High</button>
+              <button class="chip" type="button">Cost: High to low</button>
+              <button class="chip" type="button">Distance</button>
+          </div>
+          <div class="promo__banner"></div>
+          <div class="promo__search">
+              <span class="promo__icon">🔍</span>
+              <input class="promo__input" type="text" placeholder="Search for restaurant name..." />
+          </div>
+      </section>
+      <section class="restaurant-section">
+          <div class="restaurant-grid" id="restaurantGrid"></div>
+      </section>
+    </div>
+  </body>
+</html>

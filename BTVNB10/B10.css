@@ -1,0 +1,400 @@
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: auto;
+}
+.header{
+  background: #fff;
+}
+
+.head1{
+  max-width: 1500px;   
+  margin: 0 auto;      
+  padding: 12px 16px;  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;           
+}
+
+.head11{
+  display: flex;
+  align-items: center;      
+  justify-content: space-between;
+  gap: 200px;
+}
+
+.logo{
+  margin: 0;              
+  line-height: 1;
+}
+
+.hdc{
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.hdc button{
+  margin: 0;               
+  font-size: 18px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+.head1_card{
+  display: flex;
+  align-items: center;       
+  gap: 8px;
+  border: 1px solid #00000033;
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px 12px;
+  width: 450px;
+}
+
+
+.head1_card input{
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  min-width: 0;               
+}
+
+
+.head1_card input:last-child{
+  flex: 1;
+}
+
+.divider{
+  font-weight: 700;
+  margin: 0 6px;
+  line-height: 1;
+}
+
+
+.head12{
+  display: flex;
+  align-items: center;      
+  gap: 10px;
+  margin: 0;               
+  line-height: 1.2;
+}
+
+.head12 input{
+    border: none;
+}
+
+.divide{
+  font-weight: 700;
+  margin: 0;               
+  line-height: 1;
+}
+
+.head3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    font-size: 30px;
+    color: gray;
+    position: sticky;
+    top: 0;
+}
+.head3 i{
+    padding: 10px;
+    background-color: rgb(228, 228, 228);
+    border-radius: 50%;
+    color: gray;
+}
+.head3 a{
+    text-decoration: none;
+    color: grey;
+}
+.mainf{
+    background-color: rgb(206, 206, 206);
+}
+.main1{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 310px;
+}
+.main1 p{
+    font-size: 15px;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainf {
+  background: #cfcfcf;
+  padding: 40px 0;
+}
+
+.collections__inner {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.collections__head h2 {
+  font-size: 42px;
+  margin-bottom: 14px;
+}
+
+.collections__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.collections__row p {
+  max-width: 800px;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #222;
+}
+
+.collections__link {
+  color: #e15b64;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+
+.carousel {
+  position: relative;
+}
+
+
+.carousel__viewport {
+  overflow: hidden;
+  padding: 10px 0; 
+}
+
+
+.carousel__track {
+  display: flex;
+  gap: 22px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  padding: 0 56px;               
+  scrollbar-width: none;
+}
+.carousel__track::-webkit-scrollbar {
+  display: none;
+}
+
+
+.card {
+  flex: 0 0 260px;
+  height: 340px;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.card .overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 14px;
+  background: linear-gradient(transparent 55%, rgba(0,0,0,0.70));
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.card small {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+.carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  z-index: 2;
+  font-size: 30px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.carousel__btn--left { left: 10px; }
+.carousel__btn--right { right: 10px; }
+
+.promo{
+  width: min(1100px, 92vw);
+  margin: 24px auto;
+}
+
+
+.promo__filters{
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.chip{
+  padding: 12px 18px;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  border-radius: 999px;
+  font-size: 16px;
+  color: #bcbcbc;
+  cursor: pointer;
+}
+
+.chip:hover{
+  color: #777;
+  border-color: #dcdcdc;
+}
+
+
+.promo__banner{
+  height: 260px;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  background-image:
+    linear-gradient(90deg, rgba(0,0,0,.65) 0%, rgba(0,0,0,.15) 58%, rgba(0,0,0,0) 100%),
+    url("https://b.zmtcdn.com/data/o2_assets/e067a1cf0d3fe27b366402b98b994e9f1716296909.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.promo__search{
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid #ededed;
+  border-radius: 16px;
+  padding: 14px 18px;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+}
+
+.promo__icon{
+  font-size: 22px;
+  color: #888;
+}
+
+.promo__input{
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 20px;
+  color: #333;
+}
+.restaurant-section{
+  width: min(1100px, 92%);
+  margin: 40px auto;
+}
+
+.restaurant-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 26px;
+}
+
+.restaurant-card{
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  cursor: pointer;
+}
+
+.card-img{
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.badge{
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.discount{
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: #3b6cff;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card-body{
+  padding: 14px;
+}
+
+.card-title{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating{
+  background: #267e3e;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.card-info{
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.card-row{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+

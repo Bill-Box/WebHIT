@@ -54,7 +54,6 @@ div{
     align-items: center;
     color: aliceblue;
     justify-content: space-between;
-    flex-direction: space-around;
     width: auto;
     height: auto;
     padding: 15px 50px;

@@ -70,3 +70,9 @@ button:hover {
 .student-item span {
   font-weight: bold;
 }
+.text-content{
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  color: black;
+}

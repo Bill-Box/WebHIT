@@ -1,7 +1,6 @@
 .m1{
     display: flex;
     background-color: rgb(255, 255, 255);
-    flex-direction: nowrap;
     justify-content: space-around;
     justify-content: space-between;
     font-size: 24px;
@@ -111,7 +110,6 @@ h2{
     height: 300px;
     margin-left: 200px;
     margin-top: 50px;
-    margin-bottom: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1)
@@ -173,7 +171,6 @@ h2{
     background-repeat: no-repeat;
     width: 500px;
     height: 250px;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,8 +179,6 @@ h2{
 .m51{
     border-radius: 10px;
     overflow: hidden;
-    border-color: rgb(255, 14, 14);
-    width: 500px;
     height: auto;
     margin-left: 20px;
     box-shadow: 0px 4px 10px rgba(110, 107, 107, 0.3);
@@ -207,7 +202,6 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
 .m53 button:hover{
     background-color: rgb(225, 170, 108);
@@ -259,14 +253,11 @@ h2{
     margin-bottom: 30px;
 }
 .m62 i{
-    width: 60px;
-    height: 40px;
+   
     background-color: lightpink;
     border-radius: 10px;
     box-sizing: border-box;
     font-size: 15px;
-    flex-direction: column;
-    flex-wrap: nowrap;
     padding: 5px;
     margin-left: 20px;
 }

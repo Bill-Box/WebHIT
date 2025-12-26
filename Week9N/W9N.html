@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href ="MP.css">
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+        <p class="content">
+            const contente = "On weekends, my family and I enjoy spending time together. Saturday mornings usually start with a big breakfast at home. My mom makes pancakes or waffles, and we all sit around the table chatting about our plans for the day. Sometimes we decide to go hiking in the nearby forest. It’s peaceful and beautiful there, with tall trees and birds chirping.";
+        </p>
+        <button class="clickk">Xem Them</button>
+        <script>
+            
+                const ct = document.querySelector(".content");
+                const button = document.querySelector(".clickk");
+                const cttext = ct.textContent;
+                const pr = cttext.length > 40 ? cttext.slice(0, 40) + "..." : cttext;
+                ct.textContent = pr;
+                let fa = true;
+                button.addEventListener("click", () => {
+                if (fa) {
+                    ct.textContent = cttext; 
+                    button.textContent = "Rút Gọn";
+                } else {
+                    ct.textContent = pr; 
+                    button.textContent = "Xem Thêm"; 
+                }
+                fa = !fa;
+
+});
+        </script>
+    </body>
+</html>
+        
