@@ -97,54 +97,54 @@ const movies = [
   }
 ];
 
+const movieGrid = document.getElementById("movieGrid");
+const searchInput = document.getElementById("search");
+const emptyText = document.getElementById("empty");
+const countText = document.getElementById("count");
 
-const grid = document.getElementById("movieGrid");
-const search = document.getElementById("search");
-const empty = document.getElementById("empty");
-const count = document.getElementById("count");
+function renderMovies(list) {
+  movieGrid.innerHTML = "";
 
-function normalize(s){
-  return (s || "")
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
-}
+  if (list.length === 0) {
+    emptyText.style.display = "block";
+    countText.innerText = "0 phim";
+    return;
+  }
 
-function render(list){
-  grid.innerHTML = "";
-  list.forEach(m => {
+  emptyText.style.display = "none";
+
+  list.forEach(function (movie) {
     const card = document.createElement("div");
     card.className = "card";
-
-    // poster ảnh nền
     card.innerHTML = `
-      <div class="poster" style="background-image:url('${m.poster}')">
-        <div class="badge">${m.tag}</div>
+      <div class="poster" style="background-image: url('${movie.poster}')">
+        <div class="badge">${movie.tag}</div>
       </div>
       <div class="info">
-        <h3 class="name">${m.title}</h3>
-        <div class="meta">${m.year} • ${m.episodes} tập</div>
-        <p class="desc">${m.desc}</p>
+        <h3 class="name">${movie.title}</h3>
+        <div class="meta">${movie.year} • ${movie.episodes} tập</div>
+        <p class="desc">${movie.desc}</p>
       </div>
     `;
 
-    grid.appendChild(card);
+    movieGrid.appendChild(card);
   });
 
-  count.textContent = `${list.length} phim`;
-  empty.style.display = list.length === 0 ? "block" : "none";
+  countText.innerText = list.length + " phim";
 }
 
-// Search realtime
-search.addEventListener("input", () => {
-  const q = normalize(search.value.trim());
-  const filtered = movies.filter(m =>
-    normalize(m.title).includes(q) ||
-    normalize(m.tag).includes(q) ||
-    normalize(m.desc).includes(q)
-  );
-  render(filtered);
+searchInput.addEventListener("input", function () {
+  const keyword = searchInput.value.toLowerCase(); 
+  const result = [];
+
+  movies.forEach(function (movie) {
+    if (movie.title.toLowerCase().includes(keyword)) {
+      result.push(movie);
+    }
+  });
+
+  renderMovies(result);
 });
 
-// Init
-render(movies);
+
+renderMovies(movies);
