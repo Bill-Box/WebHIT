@@ -19,7 +19,7 @@ body{
   min-height:100vh;
 }
 
-/* TOPBAR */
+
 .topbar{
   width:min(1100px,92vw);
   margin:24px auto 10px;
@@ -73,7 +73,6 @@ body{
   white-space:nowrap;
 }
 
-/* MAIN */
 .container{
   width:min(1100px,92vw);
   margin:12px auto 56px;
@@ -88,7 +87,7 @@ body{
 @media (max-width: 980px){ .card{grid-column:span 6} }
 @media (max-width: 560px){ .card{grid-column:span 12} }
 
-/* CARD */
+
 .card{
   grid-column:span 4;
   border-radius:16px;
@@ -103,7 +102,6 @@ body{
   box-shadow:0 14px 40px rgba(0,0,0,.35);
 }
 
-/* Poster dùng ảnh nền */
 .poster{
   height:160px;
   background-size:cover;
