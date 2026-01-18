@@ -156,3 +156,43 @@ body{
   background:rgba(255,255,255,.03);
   color:var(--muted);
 }
+/* ===== SEARCH BOX PHIM HOẠT HÌNH ===== */
+.searchboxx {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  min-width: min(520px, 100%);
+}
+
+/* Input tìm kiếm */
+#searchCartoon {
+  width: 100%;
+  padding: 12px 14px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+
+  background: rgba(15, 23, 42, 0.65);
+  color: #e8ecf7;
+
+  outline: none;
+  font-size: 14px;
+}
+
+#searchCartoon::placeholder {
+  color: rgba(170, 179, 204, 0.75);
+}
+
+/* Pill hiển thị số phim */
+.pillc {
+  padding: 10px 14px;
+  border-radius: 999px;
+
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(99, 102, 241, 0.25);
+
+  color: #e8ecf7;
+  font-size: 13px;
+  white-space: nowrap;
+}

@@ -96,6 +96,105 @@ const movies = [
     poster: "https://www.elle.vn/wp-content/uploads/2018/10/18/phim-tinh-cam-han-quoc-3.jpg"
   }
 ];
+const cartoons = [
+  {
+    title: "Your Name",
+    year: 2016,
+    episodes: "Movie",
+    tag: "Lãng mạn",
+    desc: "Câu chuyện hoán đổi thân xác đầy cảm xúc giữa hai người trẻ.",
+    poster: "https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png"
+  },
+  {
+    title: "Spirited Away",
+    year: 2001,
+    episodes: "Movie",
+    tag: "Phiêu lưu",
+    desc: "Cô bé lạc vào thế giới linh hồn kỳ bí.",
+    poster: "https://tse4.mm.bing.net/th/id/OIP.W6QP2lJGBmdLZmqpeErZsgHaHn?rs=1&pid=ImgDetMain&o=7&rm=3"
+  },
+  {
+    title: "Doraemon",
+    year: 1979,
+    episodes: "Series",
+    tag: "Tuổi thơ",
+    desc: "Chú mèo máy đến từ tương lai và những bảo bối thần kỳ.",
+    poster: "https://th.bing.com/th/id/OIP.D8ijxxL_oMg_PAZBygGKkAHaES?w=274&h=180&c=7&r=0&o=7&dpr=1.8&pid=1.7&rm=3"
+  },
+  {
+    title: "Weathering With You",
+    year: 2019,
+    episodes: "Movie",
+    tag: "Lãng mạn",
+    desc: "Tình yêu và thời tiết gắn liền với số phận Tokyo.",
+    poster: "https://tse3.mm.bing.net/th/id/OIP.2RnsW52nYoQw6kg3RhXdvQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+  },
+  {
+    title: "Howl's Moving Castle",
+    year: 2004,
+    episodes: "Movie",
+    tag: "Giả tưởng",
+    desc: "Câu chuyện tình yêu trong thế giới phép thuật.",
+    poster: "https://img2.thuthuat123.com/uploads/2020/07/30/lau-dai-di-dong-cua-howl-howls-moving-castle-2004_111336183.jpg"
+  },
+  {
+    title: "Toy Story",
+    year: 1995,
+    episodes: "Movie",
+    tag: "Gia đình",
+    desc: "Những món đồ chơi có cảm xúc như con người.",
+    poster: "https://tse2.mm.bing.net/th/id/OIP.msNU-Ei1Pp3-cIIX89ZcCQHaJ4?rs=1&pid=ImgDetMain&o=7&rm=3"
+  },
+  {
+    title: "Frozen",
+    year: 2013,
+    episodes: "Movie",
+    tag: "Công chúa",
+    desc: "Hành trình tình thân giữa hai chị em.",
+    poster: "https://tse2.mm.bing.net/th/id/OIP.l9ixhXyza5fOjUc76KL21wHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+  },
+  {
+    title: "Kung Fu Panda",
+    year: 2008,
+    episodes: "Movie",
+    tag: "Hài hước",
+    desc: "Chú gấu trúc vụng về trở thành cao thủ kungfu.",
+    poster: "https://tse3.mm.bing.net/th/id/OIP.QhgjdDJGPJlx62yAr3uYcgHaE0?rs=1&pid=ImgDetMain&o=7&rm=3"
+  },
+  {
+    title: "Detective Conan",
+    year: 1996,
+    episodes: "Series",
+    tag: "Trinh thám",
+    desc: "Thám tử học sinh bị teo nhỏ phá án.",
+    poster: "https://tse1.mm.bing.net/th/id/OIP.OKoXlEfgoqoSm4FWsu9_GwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+  },
+  {
+    title: "Up",
+    year: 2009,
+    episodes: "Movie",
+    tag: "Chữa lành",
+    desc: "Chuyến phiêu lưu đầy cảm xúc của ông lão và cậu bé.",
+    poster: "https://static.tuoitre.vn/tto/i/s626/2009/07/14/c11YnyKn.jpg"
+  },
+  {
+    title: "Zootopia",
+    year: 2016,
+    episodes: "Movie",
+    tag: "Xã hội",
+    desc: "Thành phố động vật với nhiều thông điệp sâu sắc.",
+    poster: "https://images.alphacoders.com/703/thumb-1920-703943.jpg"
+  },
+  {
+    title: "One Piece",
+    year: 1999,
+    episodes: "Series",
+    tag: "Phiêu lưu",
+    desc: "Hành trình trở thành Vua Hải Tặc.",
+    poster: "https://tse3.mm.bing.net/th/id/OIP.zucHf6V9DG9ybeYiEIFn1gHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+  }
+];
+
 
 const movieGrid = document.getElementById("movieGrid");
 const searchInput = document.getElementById("search");
@@ -146,5 +245,55 @@ searchInput.addEventListener("input", function () {
   renderMovies(result);
 });
 
-
 renderMovies(movies);
+const cartoonGrid = document.getElementById("cartoonGrid");
+const searchCartoon = document.getElementById("searchCartoon");
+const emptyCartoon = document.getElementById("emptyCartoon");
+const countCartoon = document.getElementById("countCartoon");
+
+function renderCartoons(list) {
+  cartoonGrid.innerHTML = "";
+
+  if (list.length === 0) {
+    emptyCartoon.style.display = "block";
+    countCartoon.innerText = "0 phim";
+    return;
+  }
+
+  emptyCartoon.style.display = "none";
+
+  list.forEach(function (movie) {
+    const card = document.createElement("div");
+    card.className = "card";
+
+    card.innerHTML = `
+      <div class="poster" style="background-image:url('${movie.poster}')">
+        <div class="badge">${movie.tag}</div>
+      </div>
+      <div class="info">
+        <h3 class="name">${movie.title}</h3>
+        <div class="meta">${movie.year} • ${movie.episodes}</div>
+        <p class="desc">${movie.desc}</p>
+      </div>
+    `;
+
+    cartoonGrid.appendChild(card);
+  });
+
+  countCartoon.innerText = list.length + " phim";
+}
+
+searchCartoon.addEventListener("input", function () {
+  const keyword = searchCartoon.value.toLowerCase();
+  const result = [];
+
+  cartoons.forEach(function (movie) {
+    if (movie.title.toLowerCase().includes(keyword)) {
+      result.push(movie);
+    }
+  });
+
+  renderCartoons(result);
+});
+
+renderCartoons(cartoons);
